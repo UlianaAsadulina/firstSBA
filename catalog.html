@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="header">
+
+        </div>
+        <div class="navigation">
+
+        </div>
+        <div class="catalogContainer">
+            <div class="filterContainer">
+                <button id="filterButton">Apply filters</button>
+                <div class="checkBoxContainer">
+                    <fieldset> 
+                        <!-- Set of book types -->
+                        <legend>Book format</legend> 
+                        <input type="checkbox" name="type1" id="typePaper" value="Paper">
+                        <label for="type1">Print book</label><br>
+                        <input type="checkbox" name="type2" id="type2" value="Ebook">
+                        <label for="type2">E-book</label><br>
+                        <input type="checkbox"  name="type3" id="type3" value="Audio">
+                        <label for="type3">Audio book</label><br>
+                    </fieldset>  
+                </div>
+                <div class="checkBoxContainer">
+                    <fieldset>
+                        <!-- Set of categoties -->
+                        <legend>Category</legend>
+                        <input type="checkbox" name="categoty1" id="categoryRomance" value="Romance">
+                        <label for="category1">Romance</label><br>
+                        <input type="checkbox" name="category2" id="categoryMystery" value="Mystery">
+                        <label for="category2">Mystery</label><br>
+                        <input type="checkbox" name="category3" id="categoryFiction" value="Fiction">
+                        <label for="category3">Fiction</label><br>
+                        <input type="checkbox" name="category4" id="categoryNonF" value="Non-fiction">
+                        <label for="category4">Non-fiction</label><br>
+                        <input type="checkbox" name="category5" id="categoryScFi" value="Science-fiction">
+                        <label for="category5">Science-fiction</label><br>
+                        <input type="checkbox" name="category6" id="categoryBus" value="Business and Study">
+                        <label for="category6">Business and Study</label><br>
+                        <input type="checkbox" name="category7" id="categoryKid" value="Childrens book">
+                        <label for="category7">Childrens book</label><br>
+                        <input type="checkbox" name="category8" id="categoryTeen" value="Teens & YoungAdults">
+                        <label for="category8">Teens & YoungAdults</label><br>
+                    </fieldset>
+
+                </div>
+                <div class="checkBoxContainer">
+                    <fieldset>
+                        <!-- Set of binding -->
+                        <legend>Binding type</legend>
+                        <input type="checkbox" name="binding1" id="bindingHard" value="Hard">
+                        <label for="binding1">Hardcover</label><br>
+                    </fieldset>
+
+
+                </div>
+                <div class="checkBoxContainer">
+                    <fieldset>
+                        <!-- Set of price -->
+                        <legend>Price range</legend>
+                        <input type="checkbox" name="price1" id="price5" value="5">
+                        <label for="price1">$5 and below</label><br>
+                        <input type="checkbox" name="price2" id="price15" value="15">
+                        <label for="price2">$6 - $15</label><br>
+                        <input type="checkbox" name="price3" id="price25" value="25">
+                        <label for="price3">$16 - $25</label><br>
+                        <input type="checkbox" name="price4" id="price35" value="35">
+                        <label for="price4">$26 - $35</label><br>
+                        <input type="checkbox" name="price5" id="price50" value="50">
+                        <label for="price5">$35 - $50</label><br>
+                        <input type="checkbox" name="price6" id="price51" value="51">
+                        <label for="price6">above $50</label><br>
+                    </fieldset>
+
+                </div>
+                <div class="checkBoxContainer">
+                    <!-- Set of Language -->
+                    <fieldset>
+                        <legend>Language</legend>
+                        <input type="checkbox" name="lang1" id="langEn" value="En">
+                        <label for="lang1">English</label><br>
+                        <input type="checkbox" name="lang2" id="langSp" value="Sp">
+                        <label for="lang2">Spanish</label><br>
+                        <input type="checkbox" name="lang3" id="langFr" value="Fr">
+                        <label for="lang3">French</label><br>
+                    </fieldset>
+
+                </div>
+
+
+            </div>
+            <div class="booksCatalog"> 
+                <div class="sortContainer">   
+                    <label>Sort by
+                        <select name="sort" id="bookSort">
+                            <option value="best">Best Seller</option>
+                            <option value="new">Newest</option>
+                            <option value="old">Oldest</option>
+                            <option value="min">Price: Low to High</option>
+                            <option value="max">Price: High to Low</option>
+                            <option value="rel">Relevance</option>
+                        </select>
+                    </label>
+                </div> 
+                <hr>
+                <div class="allBooks">
+                    <!------------------>
+                    <div class="oneBook">
+                        <div class="coverBook">
+                            <img src="img/cover.jpg" alt="cover">
+                        </div>
+                        <div class="allProperty">
+                            <div class="nameBook">
+                                Name
+                            </div>
+                            <div class="autorBook">
+                                by Autor
+                            </div>
+                            <div class="yearBook">
+                                published 2020
+                            </div>
+                            <div class="raitBook">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                (3.00)
+                            </div>
+                            <div class="subProperty">
+                                <div class="binderBook">
+                                    Hardcover
+                                </div>
+                                <div class="pageBook">
+                                    250 pages
+                                </div>
+
+                            </div>
+                            <div class="subProperty">
+                                <div class="typeBook">
+                                    Paperbook
+                                </div>
+                                <div class="priceBook">
+                                    20.00 USD
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                    <!------------------>
+                    <div class="oneBook">
+                        <div class="coverBook">
+                            <img src="img/cover.jpg" alt="cover">
+                        </div>
+                        <div class="allProperty">
+                            <div class="nameBook">
+                                Name
+                            </div>
+                            <div class="autorBook">
+                                by Autor
+                            </div>
+                            <div class="yearBook">
+                                published 2020
+                            </div>
+                            <div class="raitBook">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                (3.00)
+                            </div>
+                            <div class="subProperty">
+                                <div class="binderBook">
+                                    Hardcover
+                                </div>
+                                <div class="pageBook">
+                                    250 pages
+                                </div>
+
+                            </div>
+                            <div class="subProperty">
+                                <div class="typeBook">
+                                    Paperbook
+                                </div>
+                                <div class="priceBook">
+                                    20.00 USD
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>  
+                    <!------------------>
+                    <div class="oneBook">
+                        <div class="coverBook">
+                            <img src="img/cover.jpg" alt="cover">
+                        </div>
+                        <div class="allProperty">
+                            <div class="nameBook">
+                                Name
+                            </div>
+                            <div class="autorBook">
+                                by Autor
+                            </div>
+                            <div class="yearBook">
+                                published 2020
+                            </div>
+                            <div class="raitBook">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                (3.00)
+                            </div>
+                            <div class="subProperty">
+                                <div class="binderBook">
+                                    Hardcover
+                                </div>
+                                <div class="pageBook">
+                                    250 pages
+                                </div>
+
+                            </div>
+                            <div class="subProperty">
+                                <div class="typeBook">
+                                    Paperbook
+                                </div>
+                                <div class="priceBook">
+                                    20.00 USD
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                    <!------------------>
+                    <div class="oneBook">
+                        <div class="coverBook">
+                            <img src="img/cover.jpg" alt="cover">
+                        </div>
+                        <div class="allProperty">
+                            <div class="nameBook">
+                                Name
+                            </div>
+                            <div class="autorBook">
+                                by Autor
+                            </div>
+                            <div class="yearBook">
+                                published 2020
+                            </div>
+                            <div class="raitBook">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                (3.00)
+                            </div>
+                            <div class="subProperty">
+                                <div class="binderBook">
+                                    Hardcover
+                                </div>
+                                <div class="pageBook">
+                                    250 pages
+                                </div>
+
+                            </div>
+                            <div class="subProperty">
+                                <div class="typeBook">
+                                    Paperbook
+                                </div>
+                                <div class="priceBook">
+                                    20.00 USD
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                    <!------------------>
+                    <div class="oneBook">
+                        <div class="coverBook">
+                            <img src="img/cover.jpg" alt="cover">
+                        </div>
+                        <div class="allProperty">
+                            <div class="nameBook">
+                                Name
+                            </div>
+                            <div class="autorBook">
+                                by Autor
+                            </div>
+                            <div class="yearBook">
+                                published 2020
+                            </div>
+                            <div class="raitBook">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                (3.00)
+                            </div>
+                            <div class="subProperty">
+                                <div class="binderBook">
+                                    Hardcover
+                                </div>
+                                <div class="pageBook">
+                                    250 pages
+                                </div>
+
+                            </div>
+                            <div class="subProperty">
+                                <div class="typeBook">
+                                    Paperbook
+                                </div>
+                                <div class="priceBook">
+                                    20.00 USD
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+                
+        <script src="" async defer></script>
+    </body>
+</html>
