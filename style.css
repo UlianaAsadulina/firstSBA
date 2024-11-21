@@ -306,10 +306,10 @@
         /* border: solid green; */
         display:inline;
         padding: 10px;
-        align-content: center;    
+        align-content: center;  
+        font-size: 14pt;  
 
     }
-
     
     .menuIcon {
         list-style-type: none;
@@ -320,10 +320,7 @@
         margin-left: auto;
         
         padding-right: 0px;
-    }
-
-    
-
+    }  
     
     .searchContainer {
         border: solid gainsboro;
@@ -332,7 +329,6 @@
         margin: 20px 0px 20px 0px;
         
     }
-
         
     .titleContainer {
         margin: 20px 0px 10px 0px;
@@ -341,7 +337,6 @@
         font-style: italic;
         text-align: center;
     }
-
     
     .mainCart {
         display: flex;
@@ -357,13 +352,14 @@
     .priceContainer {
         display: block;
         margin-left: auto;
-        padding-left: 10px;
+        padding-right: 10px; 
         justify-content: right;
         text-align: end;
     }
 
     .sumContainer {
         width: 35%;
+        padding-right: 5px;
         margin-left: auto;
         text-align: center;
         
@@ -573,12 +569,13 @@
     padding: 10px;
 }
 
-    display: block;
+    /* display: block;
     margin-left: auto;
     padding-left: 10px;
     justify-content: right;
     text-align: end;
-} */
+}  */
+
 .cartTable {
     border: 1px solid gray;
     border-collapse: collapse;
@@ -612,8 +609,14 @@
 .footer {
     display: flex;
     flex-wrap: wrap;
-    margin: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: auto;
     padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    
 }
 
 .footerTable {
@@ -621,6 +624,7 @@
     table-layout: fixed;
     width: 100%;  
     margin-top: 20px;  
+    
 }
 
 .footerTable th,  td {
